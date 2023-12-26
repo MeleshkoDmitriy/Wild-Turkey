@@ -1,0 +1,1591 @@
+body {
+   margin: 0;
+   padding: 0;
+   font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
+   overflow: hidden;
+}
+
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+/*-----------------------------------------------------------*/
+
+header {
+   background-color: #1d1f20;
+   position: sticky;
+   top: 0;
+   z-index: 2;
+   border-bottom: 2px solid #e8e6df;
+}
+
+.header__wrapper {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   min-height: 100px;
+}
+
+.headerLeft {
+   max-width: 100px;
+   width: 100%;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   position: relative;
+   padding: 0 20px;
+}
+
+.headerLogo img {
+   max-height: 50px;
+   position: relative;
+   bottom: 10px;
+}
+
+.headerRight {
+   max-width: 750px;
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   padding-left: 20px;
+}
+
+.headerLeft div a,
+.headerRight div a,
+.headerUserFields div a {
+   text-decoration: none;
+   color:#e8e6df;
+   font-size: 20px;
+}
+
+.headerLeft div a:hover,
+.headerRight div a:hover,
+.headerUserFields div a:hover {
+   text-decoration: none;
+   color:#ba0c2f;
+   font-size: 20px;
+   transition-duration: 0.3s;
+}
+
+.headerLeft div a:active,
+.headerRight div a:active,
+.headerUserFields div a:active {
+   text-decoration: none;
+   color: #ffffff;
+   font-size: 20px;
+   transition-duration: 0.1ms;
+}
+
+.headerUserFields {
+   max-width: 250px;
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0px 20px;
+}
+
+.headerUser {
+   position: relative;
+}
+
+#basket {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   right:-15px;
+   top: -10px;
+   width: 20px;
+   height: 20px;
+   border: 2px solid #ba0c2f;
+   border-radius: 50%;
+   color: #ffffff;
+   font-weight: 700;
+   background-color: #ba0c2f;
+   font-size: 12px;
+}
+
+#basket:hover {
+   background-color: #ffffff;
+   color: #ba0c2f;
+}
+
+#basket:active {
+   background-color: #3d3e3f;
+   color: #ffffff;
+}
+
+.headerLogin {
+   padding-left: 20px;
+}
+
+.headerExit {
+   padding-left: 20px;
+}
+
+.headerBurg img {
+   width: 50px;
+   display: none;
+   padding: 0 20px;
+}
+
+.headerBurg img:hover {
+   transform: scale(1.3);
+   transition-duration: 0.3s;
+   cursor: pointer;
+}
+
+.headerBurg img:active {
+   transform: scale(0.9);
+   transition-duration: 0.1s;
+   cursor: pointer;
+}
+
+.menuToggle {
+   visibility: hidden;
+}
+
+.menuBurger__wrapper {
+   position: fixed;
+   top: 100px;
+   right: 20px;
+   max-width: 260px;
+   width: 100%;
+}
+
+.menuBurgerWindow {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+   z-index: 2;
+   background-color: #1d1f20;
+   border: 2px solid #e8e6df;
+   border-top: 2px solid #1d1f20;
+   border-radius: 0 0 20px 20px;
+   box-shadow: 7px 7px 10px #1d1f20;
+   min-height: 350px;
+}
+
+.menuBurgerWindow a {
+   color: #e8e6df;
+   text-decoration: none;
+   font-size: 20px;
+}
+
+
+.menuBurgerWindow div a:hover {
+   text-decoration: none;
+   color:#ba0c2f;
+   font-size: 20px;
+   transition-duration: 0.3s;
+}
+
+.menuBurgerWindow div a:active {
+   text-decoration: none;
+   color: #ffffff;
+   font-size: 20px;
+   transition-duration: 0.1ms;
+}
+
+@media (max-width: 1220px) {
+   .headerRight {
+      display: none;
+   }
+   .headerBurg img {
+      width: 50px;
+      display: flex;
+   }
+}
+
+@media (max-width: 540px) {
+   .headerUserFields {
+      flex-direction: column;
+      padding: 0;
+   }
+   .headerLogo {
+      display: none;
+   }
+   #basket {
+      right:-30px;
+      top: 0px;
+   }
+   .header__wrapper {
+      flex-direction: column;
+   }
+}
+
+
+/*-----------------------------------------------------------*/
+
+.matthew {
+   background-image: url(../img/matthew-mcconaughey.jpg);
+   background-position: 0 -150px;
+   height: 890px;
+   border-bottom: 2px solid #e8e6df;
+}
+
+.matthew__wrapper {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   min-height: 500px;
+   position: relative;
+}
+
+.matthewText {
+   position: relative;
+   top: 50px;
+   background-color: #ba0c2f86;
+   max-width: 500px;
+   width: 100%;
+   height: 500px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.matthewTextBox {
+   max-width: 370px;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items: flex-start;
+}
+
+.matthewText div {
+   font-size: 50px;
+   font-weight: 700;
+   color: #e8e6df;
+   text-shadow: 2px 1px 2px #3d3e3f;
+}
+
+.matthewText p {
+   font-size: 25px;
+   color: #e8e6df;
+   text-shadow: 1px 1px 2px #3d3e3f;
+}
+
+@media (max-width:435px) {
+   .matthew {
+      background-position: -150px -150px;
+   }
+   .matthewText div {
+      font-size: 35px;
+      padding: 0 20px;
+   }
+   .matthewText p {
+      font-size: 16px;
+      padding: 0 20px;
+   }
+}
+
+/*-----------------------------------------------------------*/
+
+.ourProducts {
+   background-color: #1d1f20
+}
+
+.ourProducts__wrapper {
+   display: flex;
+   flex-direction: column;
+}
+
+.ourProductsTitle {
+   min-height: 200px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   color: #e8e6df;
+   font-size: 50px;
+   font-weight: 700;
+   border-bottom: 2px solid #e8e6df;
+   padding: 0 20px;
+}
+
+.ourProductsOriginal {
+   padding-top: 50px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   background: url(../img/wild-turkey-orig.png) 550px bottom / 500px auto no-repeat;
+}
+
+.ourProductsSmallBatch {
+   border-top: 2px solid #e8e6df;
+   padding-top: 50px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   background: url(../img/barrel.png) right bottom / 300px auto no-repeat;
+}
+
+.ourProductsItem #one {
+   padding-right: 30px;
+}
+
+.ourProductsMastersKeep {
+   border-top: 2px solid #e8e6df;
+   padding-top: 50px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   background: url(../img/bird-cat-master-op7.png) center center / 1200px auto no-repeat;
+}
+
+.ourProductsFlavored {
+   border-top: 2px solid #e8e6df;
+   padding-top: 50px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   background: url(../img/corn_illustration_def.png) center bottom no-repeat;
+}
+
+.ourProductsItem {
+   display: flex;
+   color: #e8e6df;
+   flex: 0 1 50%;
+   max-width: 600px;
+   padding: 0 0 20px 0;
+}
+
+.ourProductsItemLeft {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   min-height: 500px;
+   justify-content: center;
+}
+
+.ourProductsImage img {
+   height: 400px;
+}
+
+.ourProductsDiscription {
+   font-weight: 700;
+   font-size: 25px;
+}
+
+.ourProductsItemRight {
+   min-height: 500px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   font-size: 17px;
+}
+
+.itemRightTitle {
+   color: #ffffff;
+   font-weight: 700;
+   font-size: 25px;
+}
+
+.ourProductsItemRight {
+   position: relative;
+}
+
+.ourProductsItemRight button, .visitButton button {
+   width: 250px;
+   height: 50px;
+   border-radius: 20px;
+   border: 1px solid #ba0c2f;
+   background-color: #ba0c2f;
+   text-align: center;
+   box-shadow: 0px 2px 3px #e8e6df;
+   position: relative;
+}
+
+.ourProductsItemRight a button, .visitButton a button{
+   color: #e8e6df;
+   text-decoration: none;
+   font-size: 15px;
+   text-transform: uppercase;
+   font-weight: 700;
+}
+
+.ourProductsItemRight button:hover, .visitButton button:hover {
+   width: 250px;
+   height: 50px;
+   border-radius: 20px;
+   border: 1px solid #e8e6df;
+   background-color: #ba0c2f;
+   color: #ffffff;
+   text-align: center;
+   transition-duration: 0.3s;
+   box-shadow: 0px 4px 4px #e8e6df;
+   cursor: pointer;
+}
+
+.ourProductsItemRight button:active, .visitButton button:active {
+   width: 250px;
+   height: 50px;
+   border-radius: 20px;
+   border: 1px solid #ba0c2f;
+   background-color: #ba0c2f;
+   text-align: center;
+   color: #1d1f20;
+   transition-duration: 0.1s;
+   box-shadow: 0px 1px 2px #e8e6df;
+   top: 3px;
+   cursor: pointer;
+}
+
+@media (max-width:1175px) {
+   .ourProductsOriginal, .ourProductsSmallBatch, .ourProductsMastersKeep, .ourProductsFlavored {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   
+}
+
+@media (max-width:600px) {
+   .ourProductsItem {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+   }
+   .ourProductsTitle {
+      text-align: center;
+   }
+   .ourProductsItemLeft {
+      text-align: center;
+   }
+}
+
+/*-----------------------------------------------------------*/
+
+.sliderBox {
+   background-color: #e8e6df;
+   border-bottom: 2px solid #ba0c2f;
+   border-top: 2px solid #ba0c2f;
+}
+
+.slider {
+   position: relative;
+}
+
+.slider .item {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 30px 30px;
+   -webkit-animation-name: fade;
+   -webkit-animation-duration: 1.5s;
+   animation-name: fade;
+   animation-duration: 1.5s;
+}
+
+.slider .item .cocktailImage,
+.slider .item .cocktailRecipe {
+   flex: 1;
+   margin: 0 auto;
+}
+
+@media screen and (max-width: 640px) {
+   .slider .item {
+      flex-direction: column;
+   }
+
+   .slider .item .cocktailImage,
+   .slider .item .cocktailRecipe {
+      padding: 0 !important;
+   }
+
+   .slider .item .cocktailRecipe {
+      margin: 0;
+   }
+}
+
+.slider .item .cocktailImage {
+   text-align: right;
+   padding-right: 40px;
+}
+
+.slider .item .cocktailImage img {
+   height: 330px;
+}
+
+.slider .item .cocktailRecipe {
+   vertical-align: top;
+   text-align: left;
+   padding-left: 40px;
+}
+
+.slider .item .cocktailRecipe .cocktailName {
+   color: #1d1f20;
+   font-size: 50px;
+   font-weight: 700;
+   text-shadow: 1px 1px 1px #3d3e3f;
+}
+
+.slider .item .cocktailRecipe ul.cocktailIngredients {
+   padding: 0;
+   list-style-type: none;
+   font-size: 20px;
+   color: #3d3e3f;
+}
+
+.slider .prev,
+.slider .next {
+   cursor: pointer;
+   position: absolute;
+   top: 0;
+   top: 50%;
+   width: auto;
+   margin-top: -22px;
+   padding: 16px;
+   color: #e8e6df;
+   font-weight: bold;
+   font-size: 18px;
+   transition: 0.3s ease;
+   border-radius: 0 3px 3px 0;
+   background-color: #3d3e3f;
+}
+
+.slider .next {
+   right: 0;
+   border-radius: 3px 0 0 3px;
+}
+
+.slider .prev:hover,
+.slider .next:hover {
+   background-color: #ba0c2f;
+}
+
+.slider .prev:active,
+.slider .next:active {
+   transform: scale(0.5);
+   text-decoration: 0.1ms;
+}
+
+.slider-dots {
+   text-align: center;
+}
+
+.slider-dots_item {
+   cursor: pointer;
+   height: 12px;
+   width: 12px;
+   margin: 0 2px;
+   background-color: #3d3e3f;
+   border-radius: 50%;
+   display: inline-block;
+   transition: background-color 1s ease;
+}
+
+.active,
+.slider-dots_item:hover {
+   background-color: #ba0c2f;
+   text-decoration: 0.3s;
+}
+
+@-webkit-keyframes fade {
+   from {
+      opacity: .4
+   }
+   to {
+      opacity: 1
+   }
+}
+@keyframes fade {
+   from {
+      opacity: .4
+   }
+   to {
+      opacity: 1
+   }
+}
+
+@media (max-width:400px) {
+   .slider .item .cocktailRecipe ul.cocktailIngredients {
+      font-size: 14px;
+   }
+   .slider .item .cocktailRecipe .cocktailName {
+      font-size: 30px;
+   }
+}
+
+/*-----------------------------------------------------------*/
+
+.cocktails {
+   border-top: 2px solid #e8e6df;
+   min-height: 850px;
+   background: url(../img/cocktails/Cocktail.png) left bottom / auto 750px no-repeat, url(../img/bartender.jpg) 0 0 / cover;
+}
+
+.cocktails__wrapper {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   min-height: 500px;
+   position: relative;
+}
+
+.cocktailsText {
+   background-color: #ba0c2f86;
+   min-height: 850px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.cocktailsTextBox {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items: flex-start;
+   background: url(../img/wild-turkey-grain-illustration.png) right center / auto 200px no-repeat;
+}
+
+.cocktailsText div {
+   padding: 0 20px;
+   font-size: 50px;
+   font-weight: 700;
+   color: #e8e6df;
+   text-shadow: 3px 2px 2px #1d1f20;
+}
+
+@media (max-width:350px) {
+   .cocktails {
+      background: url(../img/cocktails/Cocktail.png) left bottom / auto 750px no-repeat, url(../img/bartender.jpg) -350px 0 / cover;
+   }
+   .cocktailsText div {
+      font-size: 35px;
+      padding: 0 30px 0 40px;
+   }
+   .cocktailsTextBox {
+      background: url(../img/wild-turkey-grain-illustration.png) right center / auto 160px no-repeat;
+   }
+}
+
+
+/*-----------------------------------------------------------*/
+
+.feedback {
+   background-color: #1d1f20;
+   border-bottom: 2px solid #ffffff;
+}
+
+.feedback__wrapper{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 0 20px 0 20px;
+}
+
+.feedbackTitle {
+   color: #e8e6df;
+   font-size: 50px;
+   font-weight: 700;
+   min-height: 200px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+#first {
+   border-top: 2px solid #e8e6df;
+}
+
+.feedbackItem {
+   display: flex;
+   max-width: 1200px;
+   width: 100%;
+   justify-content: flex-start;
+   padding: 30px 0px 30px 0px;
+}
+
+.feedbackItemInput {
+   display: flex;
+   max-width: 1200px;
+   width: 100%;
+   justify-content: flex-start;
+   padding: 30px 0px 60px 0px;
+}
+
+.feedbackImage img{
+   width: 100px;
+   border-radius: 50%;
+}
+
+.feedbackImageInput {
+   min-width: 100px;
+   min-height: 100px;
+   border: 2px solid #e8e6df;
+   border-radius: 50%;
+   align-self: flex-start;
+}
+
+.feedbackImageInput img {
+   width: 100px;
+   border-radius: 50%;
+}
+
+.feedbackBody input:hover {
+   border: 2px solid #e8e6df;
+}
+
+.feedbackBody input:active {
+   border: 2px solid #ffffff;
+}
+
+.feedbackBody {
+   display: flex;
+   flex-direction: column;
+   padding-left: 20px;
+   max-width: 1200px;
+   width: 100%;
+   padding: 0 20px 0 20px;
+}
+
+.feedbackName {
+   min-height: 30px;
+   color: #e8e6df;
+   font-size: 25px;
+   font-weight: 700;
+   text-indent: 10px;
+}
+
+.feedbackText {
+   max-width: 1020px;
+   width: 100%;
+   min-height: 50px;
+   background-color: #3d3e3f;
+   color: #e8e6df;
+   font-size: 25px;
+   padding: 10px;
+   flex-shrink: 1;
+}
+
+@media (max-width:790px) {
+   .feedbackTitle {
+      text-align: center;
+      padding: 50px 0;
+   }
+   .feedbackText {
+      font-size: 20px;
+   }
+}
+
+/*-----------------------------------------------------------*/
+
+.masters {
+   background-color: #e8e6df;
+}
+
+.masters__wrapper {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+.mastersTitle {
+   min-height: 200px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   color: #1d1f20;
+   font-size: 50px;
+   font-weight: 700;
+}
+
+.mastersBox {
+   border-top: 2px solid #1d1f20;
+   max-width: 1200px;
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   padding: 100px 0 100px 0;
+}
+
+.mastersJimmy, .mastersEddie {
+   min-height: 500px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   padding-bottom: 20px;
+}
+
+.mastersJimmy {
+   position: relative;
+}
+
+.mastersName {
+   font-size: 25px;
+   color: #1d1f20;
+   font-weight: 700;
+}
+
+.mastersSignJ {
+   position: relative;
+   top: 15px;
+}
+
+.mastersSignJ img {
+   height: 70px;
+}
+
+.mastersSignE img {
+   height: 50px;
+}
+
+.mastersImageJimmy {
+   min-width: 320px;
+   width: 100%;
+   min-height: 320px;
+   background: url(../img/jimmy-russell2.jpg) 0 0 / 320px 320px no-repeat;
+}
+
+.mastersImageEddie {
+   min-width: 320px;
+   width: 100%;
+   min-height: 320px;
+   background: url(../img/eddie-russell.png) 0 0 / 320px 320px no-repeat;
+}
+
+.mastersItem {
+   background-color: #ba0c2f86;
+   max-width: 320px;
+   width: 100%;
+   min-height: 320px;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+   display: none;
+}
+
+.mastersText {
+   color: #e8e6df;
+   font-size: 20px;
+   padding: 0 20px 0 20px;
+   text-align: justify;
+   text-indent: 25px;
+}
+
+.mastersButton button {
+   width: 150px;
+   height: 50px;
+   border-radius: 20px;
+   border: 1px solid #ba0c2f;
+   background-color: #ba0c2f;
+   text-align: center;
+   box-shadow: 0px 2px 3px #e8e6df;
+   position: relative;
+}
+
+
+.mastersButton a button {
+   color: #e8e6df;
+   text-decoration: none;
+   font-size: 15px;
+   text-transform: uppercase;
+   font-weight: 700;
+}
+
+.mastersButton button:hover {
+   width: 150px;
+   height: 50px;
+   border-radius: 20px;
+   border: 1px solid #e8e6df;
+   background-color: #ba0c2f;
+   color: #ffffff;
+   text-align: center;
+   transition-duration: 0.3s;
+   box-shadow: 0px 4px 4px #e8e6df;
+   cursor: pointer;
+}
+
+.mastersButton button:active {
+   width: 150px;
+   height: 50px;
+   border-radius: 20px;
+   border: 1px solid #ba0c2f;
+   background-color: #ba0c2f;
+   text-align: center;
+   color: #1d1f20;
+   transition-duration: 0.1s;
+   box-shadow: 0px 1px 2px #e8e6df;
+   top: 3px;
+   cursor: pointer;
+}
+
+.mastersImageJimmy:hover .mastersItem {
+   display: flex;
+}
+
+.mastersImageEddie:hover .mastersItem {
+   display: flex;
+}
+
+/*-----------------------------------------------------------*/
+
+.visit {
+   background-color: #e8e6df;
+}
+
+.visit__wrapper {
+   background: url(../img/Distillery.jpg);
+   min-height: 500px;
+}
+
+.visitBox {
+   max-width: 600px;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   min-height: 500px;
+   justify-content: space-evenly;
+   padding: 0 20px 0 30px;
+}
+
+.visitTitle {
+   color: #ffffff;
+   font-size: 50px;
+   font-weight: 700;
+}
+
+.visitText {
+   font-size: 18px;
+   color: #ffffff;
+}
+
+@media (max-width:610px) {
+   .visitBox {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 30px 0 20px;
+   }
+   .visitTitle {
+      text-align: center;
+      font-size: 35px;
+      padding-right: 50px;
+   }
+   .visitText {
+      text-align: justify;
+      font-size: 16px;
+      padding-right: 50px;
+   }
+   .visitButton {
+      padding-right: 50px;
+   }
+}
+/*-----------------------------------------------------------*/
+
+footer {
+   border-top: 2px solid #e8e6df;
+   background-color: #1d1f20;
+}
+
+.footer__wrapper {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+   min-height: 300px;
+}
+
+.footerTitle {
+   color: #e8e6df;
+   text-transform: uppercase;
+}
+
+
+.footerIcons {
+   max-width: 140px;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+
+svg {
+   fill: #e8e6df;
+}
+
+svg:hover {
+   fill: #ba0c2f;
+   transform: scale(1.5);
+   transition-duration: 0.3s;
+}
+
+svg:active {
+   fill: #ffffff;
+   transform: scale(0.5);
+   transition-duration: 0.1s;
+   cursor: pointer;
+}
+
+/*-----------------------------------------------------------*/
+
+.wrapper__modal {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 3;
+   background-color: #3d3e3fd6;
+   width: 100%;
+   height: 100vh;
+}
+
+.modalToggle {
+   display: none;
+}
+
+.modalWindow {
+   background: url(../img/wild-turkey-orig.png) 220px 240px / auto 200px no-repeat;
+   background-color: #e8e6df;
+   max-width: 500px;
+   min-width: 320px;
+   width: 100%;
+   min-height: 300px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+   border: 3px solid #1d1f20;
+   border-radius: 20px;
+   box-shadow: 7px 7px 10px #1d1f20;
+}
+
+.modalWindow h2, .modalWindow h3 {
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+
+.modalWindow div, modalWindow h3 {
+   padding: 0 20px;
+}
+
+.modalText {
+   text-align: justify;
+   text-indent: 20px;
+   font-size: 17px;
+}
+
+.modalCheck {
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.modalCheck input {
+   cursor: pointer;
+}
+
+.modalButtons {
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   position: relative;
+}
+
+.modalButtons button {
+   width: 150px;
+   height: 50px;
+   border-radius: 20px;
+   border: 1px solid #ba0c2f;
+   background-color: #ba0c2f;
+   text-align: center;
+   box-shadow: 0px 2px 3px #e8e6df;
+   position: relative;
+}
+
+.modalButtons a button{
+   color: #e8e6df;
+   text-decoration: none;
+   font-size: 15px;
+   text-transform: uppercase;
+   font-weight: 700;
+}
+
+.modalButtons button:hover {
+   width: 150px;
+   height: 50px;
+   border-radius: 20px;
+   border: 1px solid #e8e6df;
+   background-color: #ba0c2f;
+   color: #ffffff;
+   text-align: center;
+   transition-duration: 0.3s;
+   box-shadow: 0px 4px 4px #ba0c2f;
+   cursor: pointer;
+}
+
+.modalButtons button:active {
+   width: 150px;
+   height: 50px;
+   border-radius: 20px;
+   border: 1px solid #ba0c2f;
+   background-color: #ba0c2f;
+   text-align: center;
+   color: #1d1f20;
+   transition-duration: 0.1s;
+   box-shadow: 0px 1px 2px #e8e6df;
+   top: 3px;
+   cursor: pointer;
+}
+
+.modalDanger {
+   font-size: 46px;
+   font-weight: 700;
+   color: #ba0c2f;
+   display: none;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+.modalDanger,
+.modalText {
+   height: 90px;
+}
+
+.companyTerms a {
+   color: #ba0c2f;
+}
+
+.companyTerms a:hover {
+   color: #3d3e3f;
+   text-shadow: 1px 1px 1px #1d1f20;
+   transition-duration: 0.1s;
+}
+
+.companyTerms a:active {
+   color: #ba0c2f;
+}
+
+@media (max-width:490px) {
+   .modalWindow {
+      background: #e8e6df;
+   }
+   .modalText {
+      font-size: 14px;
+   }
+   .modalButtons {
+      justify-content: center;
+   }
+}
+
+/*-----------------------------------------------------------*/
+
+.reg__wrapper, .authorization__wrapper {
+   display: none;
+   justify-content: center;
+   align-items: center;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 4;
+   background-color: #e8e6dfd9;
+   width: 100%;
+   height: 100vh;
+}
+
+.regWindow {
+   background: url(../img/wild-turkey-masters-keep.png) right top / 900px auto;
+   background-color: #3d3e3f;
+   max-width: 700px;
+   min-width: 320px;
+   width: 100%;
+   height: 500px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+   border: 3px solid #1d1f20;
+   border-radius: 20px;
+   box-shadow: 7px 7px 10px #1d1f20;
+   position: relative;
+}
+
+.authorizationWindow {
+   background: url(../img/bird-bg.png) right top/ auto 800px no-repeat;
+   background-color: #3d3e3f;
+   max-width: 700px;
+   min-width: 320px;
+   width: 100%;
+   height: 500px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+   border: 3px solid #1d1f20;
+   border-radius: 20px;
+   box-shadow: 7px 7px 10px #1d1f20;
+   position: relative;
+}
+
+.regTitle,
+.authorizationTitle {
+   font-size: 50px;
+   color: #e8e6df;
+}
+
+
+form {
+   max-width: 500px;
+   width: 100%;
+   height: 450px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+}
+
+
+.regButtons, .authorizationButtons {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+.regButtons input, .authorizationButtons input {
+   width: 150px;
+   height: 50px;
+   border-radius: 20px;
+   border: 1px solid #ba0c2f;
+   background-color: #ba0c2f;
+   text-align: center;
+   box-shadow: 0px 2px 3px #e8e6df;
+   position: relative;
+   padding: 0;
+}
+
+.regButtons input,
+.authorizationButtons input {
+   text-decoration: none;
+   font-size: 15px;
+   text-transform: uppercase;
+   font-weight: 700;
+   color: #e8e6df;
+}
+
+.regButtons input:hover,
+.authorizationButtons input:hover {
+   width: 150px;
+   height: 50px;
+   border-radius: 20px;
+   border: 1px solid #e8e6df;
+   background-color: #ba0c2f;
+   color: #ffffff;
+   text-align: center;
+   transition-duration: 0.3s;
+   box-shadow: 0px 4px 4px #e8e6df;
+   cursor: pointer;
+}
+
+.regButtons input:active,
+.authorizationButtons input:active {
+   width: 150px;
+   height: 50px;
+   border-radius: 20px;
+   border: 1px solid #ba0c2f;
+   background-color: #ba0c2f;
+   text-align: center;
+   color: #1d1f20;
+   transition-duration: 0.1s;
+   box-shadow: 0px 1px 2px #e8e6df;
+   top: 3px;
+   cursor: pointer;
+}
+
+form input {
+   padding: 10px 10px 10px 20px;
+   font-size: 20px;
+   max-width: 460px;
+   width: 100%;
+   height: 30px;
+   background-color: #e8e6df;
+   box-shadow: 7px 7px 10px #1d1f20;
+   border-radius: 10px;
+}
+
+
+form input::placeholder {
+   font-size: 20px;
+   text-align: left;
+   color: #1d1f20;
+}
+
+input:focus::-webkit-input-placeholder {
+   color:transparent; 
+}
+input:focus:-moz-placeholder {
+   color:transparent; 
+}
+input:focus::-moz-placeholder { 
+   color:transparent;
+}
+input:focus:-ms-input-placeholder { 
+   color:transparent; 
+}
+
+form input:hover {
+   border: 2px solid #e8e6df;
+
+}
+
+form input:focus {
+   border: 2px solid #1d1f20;
+}
+
+.regWindow img,
+.authorizationWindow img {
+   width: 50px;
+   position: absolute;
+   top: -25px;
+   right: -20px;
+   border-radius: 50%;
+   box-shadow: 3px 3px 3px #3d3e3f;
+}
+
+.regWindow img:hover,
+.authorizationWindow img:hover {
+   transform: scale(1.3);
+   transition-duration: 0.3s;
+}
+
+.regWindow img:active,
+.authorizationWindow img:active {
+   transform: scale(0.7);
+   transition-duration: 0.1ms;
+   top: -20px;
+   box-shadow: 1px 0 3px #3d3e3f;
+}
+
+.loginUniqueError,
+.passwordLengthError,
+.passwordConformationError,
+.userNotFoundError,
+.invalidPasswordError {
+   visibility:hidden;
+   color: #ba0c2f;
+   font-size: 20px;
+   text-shadow: 1px 1px 1px #ba0c2f;
+}
+
+
+
+@media (max-width:765px) {
+   .regWindow img {
+      right: 125px;
+   }
+   .authorizationWindow img {
+      right: 125px;
+   }
+}
+
+@media (max-width:535px) {
+   .regTitle {
+      font-size: 35px;
+      position: relative;
+      top: 15px;
+   }
+   .authorizationTitle {
+      font-size: 35px;
+      position: relative;
+      top: 15px;
+   }
+   .regWindow {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   .authorizationWindow {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   form input {
+      max-width: 250px;
+      align-self: center;
+   }
+   .regButtons {
+      justify-content: center;
+   }
+   .authorizationButtons {
+      justify-content: center;
+   }
+}
+
+/*-----------------------------------------------------------*/
+
+.shoppingCart__wrapper {
+   display: flex;
+   visibility: hidden;
+   justify-content: center;
+   align-items: center;
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+   z-index: 2;
+   background-color: #e8e6df;
+   border: 3px solid #ba0c2f;
+   border-radius: 20px;
+   box-shadow: 7px 7px 10px #1d1f20;
+   max-width: 260px;
+   width: 100%;
+   height: 500px;
+}
+
+.shoppingCartWindow {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between; 
+   align-items: center;
+   max-width: 280px;
+   width: 100%;
+   height: 500px;
+}
+
+.shoppingCartTitle {
+   width: 100%;
+   min-height: 50px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   color: #1d1f20;
+   font-size: 20px;
+   font-weight: 700;
+   border-bottom: 3px solid #1d1f20;
+}
+
+.shoppingCartBody {
+   overflow: auto;
+   max-width: 300px;
+   width: 100%;
+   height: 500px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.shoppingCartClose img {
+   width: 50px;
+   position: absolute;
+   top: -35px;
+   right: -10px;
+   border-radius: 50%;
+   box-shadow: 7px 7px 10px #1d1f20;
+}
+
+.shoppingCartClose img:hover {
+   transform: scale(1.3);
+}
+
+.shoppingCartClose img:active {
+   transform: scale(0.7);
+   bottom: 225px;
+   box-shadow: 1px 0 3px #3d3e3f;
+}
+
+.cartElement {
+   max-width: 280px;
+   width: 100%;
+   height: 100px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   position: relative;
+}
+
+.cartImg img {
+   height: 100px;
+}
+
+.cartText {
+   max-width: 100px;
+
+   width: 100%;
+   height: 100px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+   text-align: center;
+}
+
+.cartContent {
+   display: flex;
+   flex-wrap: nowrap;
+}
+
+.cartPrice {
+   max-width: 70px;
+   width: 100%;
+}
+
+.cartInput {
+   max-width: 70px;
+   width: 100%;
+}
+
+.cartResult {
+
+}
+
+.cartClose img {
+
+}
+
+.cartClose img {
+   width: 25px;
+   position: absolute;
+   right: 5px;
+   top: 10px;
+   border-radius: 50%;
+   box-shadow: 7px 7px 10px #1d1f20;
+}
+
+.cartClose img:hover {
+   transform: scale(1.3);
+}
+
+.cartClose img:active {
+   transform: scale(0.7);
+   box-shadow: 1px 0 3px #3d3e3f;
+}
+
+.cartFinalResult {
+   border-top: 3px solid #1d1f20;
+   max-width: 280px;
+   width: 100%;
+   min-height: 50px;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   color: #1d1f20;
+   font-size: 20px;
+   font-weight: 700;
+}

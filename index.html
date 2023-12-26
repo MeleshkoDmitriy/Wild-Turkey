@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html style="scroll-behavior: smooth;" lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./css/style.css">
+      <link rel="shortcut icon" href="./icons/wt.png">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+      <title>Wild Turkey</title>
+   </head>
+   <body>
+      <header>
+         <div class="container">
+            <div class="header__wrapper">
+               <div class="headerLeft">
+                  <div class="headerLogo"><a href=""><img src="./icons/wild-turkey-logo.png" alt="Logo" title="Wild Turkey"></a></div>
+               </div>
+               <div class="headerRight">
+                  <div class="headerProducts"><a href="#product">ПРОДУКЦИЯ</a></div>
+                  <div class="headerCocktails"><a href="#cocktails">КОКТЕЙЛИ</a></div>
+                  <div class="headerFeedback"><a href="#feedback">ОТЗЫВЫ</a></div>
+                  <div class="headerMasters"><a href="#masters">МАСТЕРА КУПАЖА</a></div>
+                  <div class="headerVisit"><a href="#visit">ПРОИЗВОДСТВО</a></div>
+               </div>
+               <div class="headerUserFields">
+                  <div class="headerReg"><a class="buttonReg" href="#">РЕГИСТРАЦИЯ</a></div>
+                  <div class="headerLogin"><a class="buttonLogin" href="#">ВОЙТИ</a></div>
+                  <div class="headerUser">
+                     <a id="userName" class="buttonUser" onclick="return false" href="#"></a>
+                     <div id="basket"></div>
+                  </div>
+                  <div class="headerExit"><a class="buttonExit" href="#">ВЫЙТИ</a></div>
+               </div>
+               <div class="headerBurg" onclick="nemuBurgerClick()"><img src="./icons/burg.png" alt=""></div>
+            </div>
+         </div>
+      </header>
+      <div class="wrapper">
+         <div class="content">
+            <div class="matthew">
+               <div class="container">
+                  <div class="matthew__wrapper">
+                     <div class="matthewEmpty">
+                     </div>
+                     <div class="matthewText">
+                        <div class="matthewTextBox">
+                           <div>НАШ</div>
+                           <div>КРЕАТИВНЫЙ</div>
+                           <div>ДИРЕКТОР</div>
+                           <p>Matthew McConaughey</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="ourProducts">
+               <div class="container">
+                  <div class="ourProducts__wrapper">
+                     <a href="#" id="product"></a>
+                     <div class="ourProductsTitle">WILD TURKEY WHISKEY</div>
+                     <div class="ourProductsOriginal">
+
+                     </div>
+                     <div class="ourProductsSmallBatch">
+                        
+                     </div>
+                     <div class="ourProductsMastersKeep">
+                        
+                     </div>
+                     <div class="ourProductsFlavored">
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="cocktails">
+               <div class="container">
+                  <div class="cocktails__wrapper">
+                     <a href="#" id="cocktails"></a>
+                     <div class="cocktails__wrapper">
+                        <div class="cocktailsEmpty">
+                        </div>
+                        <div class="cocktailsText">
+                           <div class="cocktailsTextBox">
+                              <div>WILD</div>
+                              <div>TURKEY</div>
+                              <div>COCKTAILS</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="sliderBox">
+               <div class="slider">
+                  <div class="item">
+                     <div class="cocktailImage">
+                        <img src="./img/cocktails/oldfashioned.png" alt="Oldfashioned">
+                     </div>
+                     <div class="cocktailRecipe">
+                        <div class="cocktailName">Oldfashioned</div>
+                        <ul class="cocktailIngredients">
+                           <li>Wild Turkey Master's Keep Revival 60 мл</li>
+                           <li>Angostura Bitter 2 Дэша</li>
+                           <li>Апельсиновая Цедра</li>
+                        </ul>
+                     </div>
+                  </div>
+
+                  <div class="item">
+                     <div class="cocktailImage">
+                        <img src="./img/cocktails/whiskeysour.png" alt="Whiskey Sour">
+                     </div>
+                     <div class="cocktailRecipe">
+                        <div class="cocktailName">Whiskey Sour</div>
+                        <ul class="cocktailIngredients">
+                           <li>Wild Turkey Kentucky Spirit 50 мл</li>
+                           <li>Лимонный Фреш 25 мл</li>
+                           <li>Сироп 15 мл</li>
+                           <li>Яичный Белок 1 часть</li>
+                           <li>Лимонная Цедра</li>
+                        </ul>
+                     </div>
+                  </div>
+
+                  <div class="item">
+                     <div class="cocktailImage">
+                        <img src="./img/cocktails/boulevardier.png" alt="Boulevardier">
+                     </div>
+                     <div class="cocktailRecipe">
+                        <div class="cocktailName">Boulevardier</div>
+                        <ul class="cocktailIngredients">
+                           <li>Wild Turkey 101 45 мл</li>
+                           <li>Красный Сладкий Вермут 30 мл</li>
+                           <li>Campari 30 мл</li>
+                           <li>Коктейльная Вишня 1 шт</li>
+                        </ul>
+                     </div>
+                  </div>
+
+                  <div class="item">
+                     <div class="cocktailImage">
+                        <img src="./img/cocktails/manhattan.png" alt="Manhattan">
+                     </div>
+                     <div class="cocktailRecipe">
+                        <div class="cocktailName">Manhattan</div>
+                        <ul class="cocktailIngredients">
+                           <li>Wild Turkey Master's Keep 17 Years 60 мл</li>
+                           <li>Красный Сладкий Вермут 30 мл</li>
+                           <li>Angostura Bitter 2 Дэша</li>
+                           <li>Апельсиновая Цедра</li>
+                           <li>Коктейльная Вишня 1 шт</li>
+                        </ul>
+                     </div>
+                  </div>
+
+                  <div class="item">
+                     <div class="cocktailImage">
+                        <img src="./img/cocktails/sazerac.png" alt="Sazerac">
+                     </div>
+                     <div class="cocktailRecipe">
+                        <div class="cocktailName">Sazerac</div>
+                        <ul class="cocktailIngredients">
+                           <li>Wild Turkey Rare Breed Rye 30 мл</li>
+                           <li>Cognac 30 мл</li>
+                           <li>Peychaud’s Bitter 2 Дэша</li>
+                           <li>Абсент 5 мл</li>
+                           <li>Лимонная Цедра</li>
+                        </ul>
+                     </div>
+                  </div>
+               <a class="prev" onclick="minusSlide()">&#10094;</a>
+               <a class="next" onclick="plusSlide()">&#10095;</a>
+            </div>
+            <div class="slider-dots">
+               <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+               <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
+               <span class="slider-dots_item" onclick="currentSlide(3)"></span> 
+               <span class="slider-dots_item" onclick="currentSlide(4)"></span> 
+               <span class="slider-dots_item" onclick="currentSlide(5)"></span> 
+            </div>
+            </div>
+            <div class="feedback">
+               <div class="container">
+                  <div class="feedback__wrapper">
+                     <a href="#" id="feedback"></a>
+                     <div class="feedbackTitle">ОТЗЫВЫ НАШИХ КЛИЕНТОВ</div>
+                     <div class="feedbackItem" id="first">
+                        <div class="feedbackImage">
+                           <img src="./img/users/Dima.jpg" alt="">
+                        </div>
+                        <div class="feedbackBody">
+                           <div class="feedbackName">Дмитрий</div>
+                           <div class="feedbackText">Lorem ipsum dolor sit amet consectetur adip magnam architecto ut voluptate ex cum!</div>
+                        </div>
+                     </div>
+                     <div class="feedbackItem">
+                        <div class="feedbackImage">
+                           <img src="./img/users/Vitaliy.jpg" alt="">
+                        </div>
+                        <div class="feedbackBody">
+                           <div class="feedbackName">Виталий</div>
+                           <div class="feedbackText">Lorem ipsum dolor sit amet.</div>
+                        </div>
+                     </div>
+                     <div class="feedbackItem">
+                        <div class="feedbackImage">
+                           <img src="./img/users/Sergey.jpg" alt="">
+                        </div>
+                        <div class="feedbackBody">
+                           <div class="feedbackName">Сергей</div>
+                           <div class="feedbackText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium eos necessitatibus atque beatae! Ducimus, autem!</div>
+                        </div>
+                     </div>
+                     <div class="feedbackItem">
+                        <div class="feedbackImage">
+                           <img src="./img/users/Vlad.jpg" alt="">
+                        </div>
+                        <div class="feedbackBody">
+                           <div class="feedbackName">Владислав</div>
+                           <div class="feedbackText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id dolor deserunt necessitatibus, consequuntur numquam atque. Non rem quos quod voluptas!</div>
+                        </div>
+                     </div>
+                     <div class="feedbackItem">
+                        <div class="feedbackImage">
+                           <img src="./img/users/Andrew.jpg" alt="">
+                        </div>
+                        <div class="feedbackBody">
+                           <div class="feedbackName">Андрей</div>
+                           <div class="feedbackText">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+                        </div>
+                     </div>
+                     <div class="feedbackItemInput">
+                        <div class="feedbackImageInput">
+                           <img src="./img/users/new.png" alt="">
+                        </div>
+                        <div class="feedbackBody">
+                           <div class="feedbackName">Ваш отзыв</div>
+                           <input disabled placeholder="Комментарии доступны только для зарегистрированных пользователей" class="feedbackText" type="text">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="masters">
+               <div class="container">
+                  <div class="masters__wrapper">
+                     <a href="#" id="masters"></a>
+                     <div class="mastersTitle">МАСТЕРА КУПАЖА</div>
+                     <div class="mastersBox">
+                        <div class="mastersJimmy">
+                           <div class="mastersImageJimmy">
+                              <div class="mastersItem">
+                                 <div class="mastersText">
+                                    Некоторые называют его «Буддой Бурбона». Он называет себя «добрым старым Джимми из Кентукки». Все называют его старейшим действующим мастером дистилляции в мире.
+                                 </div>
+                                 <div class="mastersButton">
+                                    <a href="https://www.wildturkeybourbon.com/jimmy-russell/" target="_blank"><button>УЗНАТЬ БОЛЬШЕ</button></a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="mastersName">
+                              JIMMY RUSSELL
+                           </div>
+                           <div class="mastersSignJ">
+                              <img src="./img/jimmy_signature-copy.png" alt="">
+                           </div>
+                        </div>
+                        <div class="mastersEddie">
+                           <div class="mastersImageEddie">
+                              <div class="mastersItem">
+                                 <div class="mastersText">
+                                    Сын мастера винокурни Джимми, Эдди поднялся по служебной лестнице, как и его отец, присоединившись к нему в качестве мастера винокурни в 2015 году.
+                                 </div>
+                                 <div class="mastersButton">
+                                    <a href="https://www.wildturkeybourbon.com/eddie-russell/" target="_blank"><button>УЗНАТЬ БОЛЬШЕ</button></a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="mastersName">
+                              EDDIE RUSSELL
+                           </div>
+                           <div class="mastersSignE">
+                              <img src="./img/Eddie-White.png" alt="">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="visit">
+               <a href="#" id="visit"></a>
+               <div class="container">
+                  <div class="visit__wrapper">
+                     <div class="visitBox">
+                        <div class="visitTitle">ПУТЬ ДЛЯ САМЫХ ИСКУШЁННЫХ</div>
+                        <div class="visitText">Есть только один способ узнать, что такое Родина настоящего Бурбона - увидеть это своими глазами! Приезжайте на дистиллерию Wild Turkey в Кентуки. Совершите самую незабываемую поездку вашей жизни!</div>
+                        <div class="visitButton">
+                           <a href="https://www.wildturkeybourbon.com/book-a-tour/" target="_blank"><button>ЗАБРОНИРОВАТЬ ПОЕЗДКУ</button></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <footer>
+            <div class="container">
+               <div class="footer__wrapper">
+                  <div class="footerLogo">
+                     <img src="./icons/turkey.png" alt="Turkey">
+                  </div>
+                  <div class="footerTitle">
+                     Наши социальные сети
+                  </div>
+                  <div class="footerIcons">
+                     <a href="https://www.instagram.com/wildturkey/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        width="24" height="24"
+                        viewBox="0 0 24 24"><path d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5.243 21 8 21 L 16 21 C 18.757 21 21 18.757 21 16 L 21 8 C 21 5.243 18.757 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.654 5 19 6.346 19 8 L 19 16 C 19 17.654 17.654 19 16 19 L 8 19 C 6.346 19 5 17.654 5 16 L 5 8 C 5 6.346 6.346 5 8 5 z M 17 6 A 1 1 0 0 0 16 7 A 1 1 0 0 0 17 8 A 1 1 0 0 0 18 7 A 1 1 0 0 0 17 6 z M 12 7 C 9.243 7 7 9.243 7 12 C 7 14.757 9.243 17 12 17 C 14.757 17 17 14.757 17 12 C 17 9.243 14.757 7 12 7 z M 12 9 C 13.654 9 15 10.346 15 12 C 15 13.654 13.654 15 12 15 C 10.346 15 9 13.654 9 12 C 9 10.346 10.346 9 12 9 z"></path></svg></a>
+                     <a href="https://www.facebook.com/wildturkey" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        width="24" height="24"
+                        viewBox="0 0 24 24"><path d="M 12 2 C 6.4889971 2 2 6.4889971 2 12 C 2 17.511003 6.4889971 22 12 22 C 17.511003 22 22 17.511003 22 12 C 22 6.4889971 17.511003 2 12 2 z M 12 4 C 16.430123 4 20 7.5698774 20 12 C 20 16.014467 17.065322 19.313017 13.21875 19.898438 L 13.21875 14.384766 L 15.546875 14.384766 L 15.912109 12.019531 L 13.21875 12.019531 L 13.21875 10.726562 C 13.21875 9.7435625 13.538984 8.8710938 14.458984 8.8710938 L 15.935547 8.8710938 L 15.935547 6.8066406 C 15.675547 6.7716406 15.126844 6.6953125 14.089844 6.6953125 C 11.923844 6.6953125 10.654297 7.8393125 10.654297 10.445312 L 10.654297 12.019531 L 8.4277344 12.019531 L 8.4277344 14.384766 L 10.654297 14.384766 L 10.654297 19.878906 C 6.8702905 19.240845 4 15.970237 4 12 C 4 7.5698774 7.5698774 4 12 4 z"></path></svg></a>
+                     <a href="https://www.youtube.com/user/wtbourbon" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        width="24" height="24"
+                        viewBox="0 0 24 24"><path d="M 12 4 C 12 4 5.7455469 3.9999687 4.1855469 4.4179688 C 3.3245469 4.6479688 2.6479687 5.3255469 2.4179688 6.1855469 C 1.9999687 7.7455469 2 12 2 12 C 2 12 1.9999687 16.254453 2.4179688 17.814453 C 2.6479687 18.675453 3.3255469 19.352031 4.1855469 19.582031 C 5.7455469 20.000031 12 20 12 20 C 12 20 18.254453 20.000031 19.814453 19.582031 C 20.674453 19.352031 21.352031 18.674453 21.582031 17.814453 C 22.000031 16.254453 22 12 22 12 C 22 12 22.000031 7.7455469 21.582031 6.1855469 C 21.352031 5.3255469 20.674453 4.6479688 19.814453 4.4179688 C 18.254453 3.9999687 12 4 12 4 z M 12 6 C 14.882 6 18.490875 6.1336094 19.296875 6.3496094 C 19.465875 6.3946094 19.604391 6.533125 19.650391 6.703125 C 19.891391 7.601125 20 10.342 20 12 C 20 13.658 19.891391 16.397875 19.650391 17.296875 C 19.605391 17.465875 19.466875 17.604391 19.296875 17.650391 C 18.491875 17.866391 14.882 18 12 18 C 9.119 18 5.510125 17.866391 4.703125 17.650391 C 4.534125 17.605391 4.3956094 17.466875 4.3496094 17.296875 C 4.1086094 16.398875 4 13.658 4 12 C 4 10.342 4.1086094 7.6011719 4.3496094 6.7011719 C 4.3946094 6.5331719 4.533125 6.3946094 4.703125 6.3496094 C 5.508125 6.1336094 9.118 6 12 6 z M 10 8.5351562 L 10 15.464844 L 16 12 L 10 8.5351562 z"></path></svg></a>
+                     <a href="https://twitter.com/wildturkey" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        width="24" height="24"
+                        viewBox="0 0 24 24">    <path d="M22,3.999c-0.78,0.463-2.345,1.094-3.265,1.276c-0.027,0.007-0.049,0.016-0.075,0.023c-0.813-0.802-1.927-1.299-3.16-1.299 c-2.485,0-4.5,2.015-4.5,4.5c0,0.131-0.011,0.372,0,0.5c-3.353,0-5.905-1.756-7.735-4c-0.199,0.5-0.286,1.29-0.286,2.032 c0,1.401,1.095,2.777,2.8,3.63c-0.314,0.081-0.66,0.139-1.02,0.139c-0.581,0-1.196-0.153-1.759-0.617c0,0.017,0,0.033,0,0.051 c0,1.958,2.078,3.291,3.926,3.662c-0.375,0.221-1.131,0.243-1.5,0.243c-0.26,0-1.18-0.119-1.426-0.165 c0.514,1.605,2.368,2.507,4.135,2.539c-1.382,1.084-2.341,1.486-5.171,1.486H2C3.788,19.145,6.065,20,8.347,20 C15.777,20,20,14.337,20,8.999c0-0.086-0.002-0.266-0.005-0.447C19.995,8.534,20,8.517,20,8.499c0-0.027-0.008-0.053-0.008-0.08 c-0.003-0.136-0.006-0.263-0.009-0.329c0.79-0.57,1.475-1.281,2.017-2.091c-0.725,0.322-1.503,0.538-2.32,0.636 C20.514,6.135,21.699,4.943,22,3.999z M18,8.999c0,4.08-2.957,8.399-8.466,8.943C10.28,17.413,11,16.662,11,16.662 S8,14,7.775,10.522C8.81,10.838,9.888,10.999,11,10.999h2v-2.5c0-0.001,0-0.001,0-0.001C13.002,7.118,14.12,6,15.5,6 C16.881,6,18,7.119,18,8.5C18,8.5,18,8.92,18,8.999z"></path></svg></a>
+                  </div>
+               </div>
+            </div>
+         </footer>
+      </div>
+      <!-- <section class="wrapper__modal">
+         <div class="modalWindow">
+            <h2>ВНИМАНИЕ!</h2>
+            <h3>Подтвердите, что вам исполнилось 18+</h3>
+            <div class="modalText">
+               На странице, которую вы собираетесь посетить, содержится материал доступный к просмотру только для совершеннолетних! Пожалуйста, подтвердите ваш возраст.
+            </div>
+            <div class="modalDanger">
+               вход воспрещен!
+            </div>
+            <div class="modalCheck">
+               <input type="checkbox" id="adultCheckbox" required>
+               <div class="companyTerms">Я прочитал(a) и согласен(a) с <a target="_blank" href="https://www.wildturkeybourbon.com/terms-conditions/">условиями компании.</a></div>
+            </div>
+            <div class="modalButtons">
+               <a href="#"><button class="buttonYes" disabled="">Да, мне есть 18+</button></a>
+               <a href="#"><button class="buttonNo">Нет, мне нет&nbsp; 18+</button></a>
+            </div>
+         </div>
+      </section> -->
+      <section class="reg__wrapper">
+         <div class="regWindow">
+               <div class="regClose"><a class="buttonClose" href="#"><img src="./icons/close.png" alt=""></a></div>
+               <div class="regTitle">Регистрация</div>
+               <form action="#" class="regForm" method="post" enctype="multipart/form-data">
+                  <div class="regInputs">
+                     <label class="loginUniqueError validation_error">Пользователь с таким логином уже существует</label>
+                     <input name="login" placeholder="Ваш Логин [eng]" type="text" required>
+                  </div>
+                  <div class="regInputs">
+                     <label class="passwordLengthError validation_error">Пароль должен быть 8 или более символов</label>
+                     <input name="password" placeholder="Ваш Пароль [eng]" type="password" required>
+                  </div>
+                  <div class="regInputs">
+                     <label class="passwordConformationError validation_error">Пароли не совпадают</label>
+                     <input name="password_confirmation" placeholder="Повторите Пароль [eng]" type="password" required>
+                  </div>
+                  <div class="regButtons">
+                     <input class="buttonSend" value="Отправить" type="submit">
+                     <input class="buttonClear" value="Очистить" type="reset">
+                  </div>
+               </form>
+         </div>
+      </section>
+      <section class="authorization__wrapper">
+         <div class="authorizationWindow">
+            <div class="authorizationClose"><a class="authorizationClose" href="#"><img src="./icons/close.png" alt=""></a></div>
+            <div class="authorizationTitle">Авторизация</div>
+            <form action="#" class="authorizationForm" method="post" enctype="multipart/form-data">
+               <div class="authorizationInputs">
+                  <label class="userNotFoundError validation_error">Пользователя с таким логином не существует</label>
+                  <input name="login" placeholder="Ваш Логин" type="text" required>
+               </div>
+               <div class="regInputs">
+                  <label class="invalidPasswordError validation_error">Неверный пароль</label>
+                  <input name="password" placeholder="Ваш Пароль" type="password" required>
+               </div>
+               <div class="authorizationButtons">
+                  <input class="buttonSend" value="Войти" type="submit">
+                  <input class="buttonClear" value="Очистить" type="reset">
+               </div>
+            </form>
+      </div>
+      </section>
+      <section class="shoppingCart__wrapper">
+         <div class="shoppingCartWindow">
+            <div class="shoppingCartClose"><a class="shoppingCartCloseLink" href="#" onclick="return false"><img src="./icons/close.png" alt=""></a></div>
+            <div class="shoppingCartTitle">Shopping Cart</div>
+            <div class="shoppingCartBody">
+            </div>
+            <div class="cartFinalResult">
+               <div>ИТОГО: $</div>
+            </div>
+         </div>
+      </section>
+      <section class="menuBurger menuToggle">
+         <div class="menuBurger__wrapper">
+            <div class="menuBurgerWindow">
+               <div class="headerProducts"><a href="#product">ПРОДУКЦИЯ</a></div>
+               <div class="headerCocktails"><a href="#cocktails">КОКТЕЙЛИ</a></div>
+               <div class="headerFeedback"><a href="#feedback">ОТЗЫВЫ</a></div>
+               <div class="headerMasters"><a href="#masters">МАСТЕРА КУПАЖА</a></div>
+               <div class="headerVisit"><a href="#visit">ПРОИЗВОДСТВО</a></div>
+            </div>
+         </div>
+      </section>
+      <script src="./js/index.js" defer></script>
+   </body>
+</html>
+
